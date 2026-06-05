@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Estetik işlemler sonrası hastalar için genel bilgilendirme ve sık sorulan sorular."
+    />
+    <meta name="theme-color" content="#0f766e" />
+    <title>Medest Hasta Bilgilendirme</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Ana sayfa">
+        <span class="brand-mark">M</span>
+        <span>
+          <strong>Medest</strong>
+          <small>Hasta Bilgilendirme</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="Ana menu">
+        <a href="#islemler">İşlemler</a>
+        <a href="#sss">SSS</a>
+        <a href="#kvkk">KVKK</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">QR ile hızlı erişim</p>
+          <h1>İşlem sonrası merak ettiklerinizi sade ve güvenilir şekilde okuyun.</h1>
+          <p>
+            Bu sayfa; botoks, dolgu, lazer epilasyon ve kimyasal peeling gibi estetik
+            işlemlerden sonra hastalara verilen genel bilgilendirme notlarını içerir.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#islemler">İşlem seç</a>
+            <a class="button secondary" href="tel:+905000000000">Kliniği ara</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="notice-band" aria-label="Önemli bilgilendirme">
+        <strong>Önemli:</strong>
+        Bu bilgiler genel bilgilendirme amaçlıdır; muayene, tanı veya kişisel tedavi
+        önerisi yerine geçmez. Beklenmeyen bir şikayetiniz varsa kliniğinizle iletişime
+        geçin.
+      </section>
+
+      <section id="islemler" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">İşlem rehberleri</p>
+          <h2>Size verilen QR karttaki işleme dokunun.</h2>
+        </div>
+        <div id="procedure-list" class="procedure-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="detay" class="section detail-section" hidden>
+        <div class="detail-layout">
+          <aside class="quick-panel">
+            <p class="eyebrow">Hızlı erişim</p>
+            <div id="quick-links" class="quick-links"></div>
+          </aside>
+          <article id="procedure-detail" class="procedure-detail"></article>
+        </div>
+      </section>
+
+      <section id="sss" class="section muted-section">
+        <div class="section-heading">
+          <p class="eyebrow">Sık sorulan sorular</p>
+          <h2>Genel sorular</h2>
+        </div>
+        <div id="faq-list" class="faq-list"></div>
+      </section>
+
+      <section id="kvkk" class="section legal-section">
+        <div class="section-heading">
+          <p class="eyebrow">KVKK ve tıbbi sınır</p>
+          <h2>Kişisel veri toplamayan ilk sürüm</h2>
+        </div>
+        <div class="legal-copy">
+          <p>
+            Bu web sitesi ilk sürümde hasta adı, telefon, TC kimlik numarası, fotoğraf,
+            işlem tarihi veya sağlık verisi toplamaz. Sayfalar yalnızca genel işlem
+            sonrası bilgilendirme sunmak için hazırlanmıştır.
+          </p>
+          <p>
+            Buradaki bilgiler hekiminizin size özel önerilerinin yerine geçmez. Size
+            özel verilen yazılı veya sözlü talimatlar varsa onları esas alınız.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <a class="contact-fab" href="https://wa.me/905000000000" aria-label="WhatsApp ile iletişim">
+      WhatsApp
+    </a>
+
+    <footer class="site-footer">
+      <p>Medest Hasta Bilgilendirme</p>
+      <p>Acil durumda en yakın sağlık kuruluşuna başvurunuz.</p>
+    </footer>
+
+    <script src="/app.js?v=2" type="module"></script>
+  </body>
+</html>
