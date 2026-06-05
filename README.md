@@ -16,10 +16,12 @@ Estetik kliniğine gelen hastaların QR kod ile ulaşabileceği mobil uyumlu has
 
 Canlı domain bağlandıktan sonra aşağıdaki linkler QR kodlara yerleştirilebilir:
 
-- `https://alanadiniz.com/#botoks`
-- `https://alanadiniz.com/#dolgu`
-- `https://alanadiniz.com/#lazer-epilasyon`
-- `https://alanadiniz.com/#kimyasal-peeling`
+- `https://medesti.netlify.app/#botoks`
+- `https://medesti.netlify.app/#dolgu`
+- `https://medesti.netlify.app/#lazer-epilasyon`
+- `https://medesti.netlify.app/#kimyasal-peeling`
+
+QR kod dosyaları `qr-codes` klasöründedir. Baskı için SVG dosyaları, hızlı paylaşım için PNG dosyaları kullanılabilir.
 
 ## Klinik bilgilerini güncelleme
 
