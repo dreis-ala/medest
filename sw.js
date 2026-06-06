@@ -1,9 +1,9 @@
-const CACHE_NAME = "medest-v10";
+const CACHE_NAME = "medest-v12";
 const ASSETS = [
   "/",
   "/index.html",
-  "/styles.css?v=10",
-  "/app.js?v=10",
+  "/styles.css?v=12",
+  "/app.js?v=12",
   "/manifest.webmanifest",
   "/icons/med-eis-logo.png",
   "/icons/med-eis-icon-192.png",

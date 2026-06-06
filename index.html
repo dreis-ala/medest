@@ -16,14 +16,14 @@
       rel="stylesheet"
     />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="stylesheet" href="/styles.css?v=10" />
+    <link rel="stylesheet" href="/styles.css?v=12" />
   </head>
   <body>
     <header class="site-header">
       <nav class="top-nav" aria-label="Ana menu">
-        <a href="#islemler">İşlemler</a>
-        <a href="#qr-kodlar">QR</a>
+        <a href="#islemler">Rehberler</a>
         <a href="#sss">SSS</a>
+        <a href="#qr-kodlar">QR</a>
         <a href="#kvkk">KVKK</a>
       </nav>
       <a class="brand" href="/" aria-label="Ana sayfa">
@@ -67,20 +67,8 @@
         <div id="procedure-list" class="procedure-grid" aria-live="polite"></div>
       </section>
 
-      <section id="qr-kodlar" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">QR</p>
-          <h2>İşlem gruplarına ait QR kodları</h2>
-        </div>
-        <div id="qr-list" class="procedure-grid" aria-live="polite"></div>
-      </section>
-
       <section id="detay" class="section detail-section" hidden>
         <div class="detail-layout">
-          <aside class="quick-panel">
-            <p class="eyebrow">Hızlı erişim</p>
-            <div id="quick-links" class="quick-links"></div>
-          </aside>
           <article id="procedure-detail" class="procedure-detail"></article>
         </div>
       </section>
@@ -91,6 +79,14 @@
           <h2>Genel sorular</h2>
         </div>
         <div id="faq-list" class="faq-list"></div>
+      </section>
+
+      <section id="qr-kodlar" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">QR</p>
+          <h2>İşlem gruplarına ait QR kodları</h2>
+        </div>
+        <div id="qr-list" class="procedure-grid" aria-live="polite"></div>
       </section>
 
       <section id="kvkk" class="section legal-section">
@@ -117,6 +113,6 @@
       <p>Acil durumda en yakın sağlık kuruluşuna başvurunuz.</p>
     </footer>
 
-    <script src="/app.js?v=10" type="module"></script>
+    <script src="/app.js?v=12" type="module"></script>
   </body>
 </html>

@@ -478,7 +478,6 @@ const faqs = [
 const procedureList = document.querySelector("#procedure-list");
 const detailSection = document.querySelector("#detay");
 const procedureDetail = document.querySelector("#procedure-detail");
-const quickLinks = document.querySelector("#quick-links");
 const faqList = document.querySelector("#faq-list");
 const qrList = document.querySelector("#qr-list");
 
@@ -533,24 +532,6 @@ function renderQrCards() {
             <a class="guide-chip" href="#${category.slug}">${category.title}</a>
           </div>
         </details>
-      `,
-    )
-    .join("");
-}
-
-function renderQuickLinks() {
-  quickLinks.innerHTML = guideCategories
-    .map(
-      (category) => `
-        <div class="quick-group">
-          <strong>${category.title}</strong>
-          ${category.guideSlugs
-            .map((slug) => {
-              const guide = getGuide(slug);
-              return `<a href="#${guide.slug}">${guide.shortTitle}</a>`;
-            })
-            .join("")}
-        </div>
       `,
     )
     .join("");
@@ -641,7 +622,6 @@ function handleHash() {
 
 renderProcedureCards();
 renderQrCards();
-renderQuickLinks();
 renderFaqs();
 handleHash();
 

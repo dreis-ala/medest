@@ -302,7 +302,6 @@ p {
 .category-card,
 .faq-item,
 .procedure-detail,
-.quick-panel,
 .legal-copy {
   border: 1px solid rgba(255, 244, 234, 0.16);
   border-radius: var(--radius);
@@ -595,47 +594,8 @@ p {
 }
 
 .detail-layout {
-  display: grid;
-  grid-template-columns: minmax(210px, 280px) minmax(0, 1fr);
-  gap: 18px;
-  align-items: start;
-}
-
-.quick-panel {
-  position: sticky;
-  top: 82px;
-  padding: 18px;
-  background: rgba(38, 0, 9, 0.88);
-  color: white;
-}
-
-.quick-links {
-  display: grid;
-  gap: 14px;
-}
-
-.quick-links a {
-  padding: 10px 12px;
-  border: 1px solid rgba(255, 244, 234, 0.16);
-  color: rgba(255, 244, 234, 0.84);
-  text-decoration: none;
-}
-
-.quick-group {
-  display: grid;
-  gap: 7px;
-}
-
-.quick-group strong {
-  color: #ffd37d;
-  font-size: 13px;
-  text-transform: uppercase;
-}
-
-.quick-links a:hover,
-.quick-links a:focus-visible {
-  background: var(--cream);
-  color: var(--primary-dark);
+  max-width: 980px;
+  margin-inline: auto;
 }
 
 .procedure-detail {
@@ -934,14 +894,6 @@ p {
 
   .category-card {
     min-height: 250px;
-  }
-
-  .detail-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .quick-panel {
-    position: static;
   }
 
   .detail-block summary {
