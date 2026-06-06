@@ -1,5 +1,0 @@
-anasayfa: https://medesti.netlify.app/
-botoks: https://medesti.netlify.app/#botoks
-dolgu: https://medesti.netlify.app/#dolgu
-lazer-epilasyon: https://medesti.netlify.app/#lazer-epilasyon
-kimyasal-peeling: https://medesti.netlify.app/#kimyasal-peeling

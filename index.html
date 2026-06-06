@@ -7,39 +7,47 @@
       name="description"
       content="Estetik işlemler sonrası hastalar için genel bilgilendirme ve sık sorulan sorular."
     />
-    <meta name="theme-color" content="#0f766e" />
-    <title>Medest Hasta Bilgilendirme</title>
+    <meta name="theme-color" content="#97001f" />
+    <title>med.eis Hasta Bilgilendirme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@600;700&family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles.css?v=10" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="Ana sayfa">
-        <span class="brand-mark">M</span>
-        <span>
-          <strong>Medest</strong>
-          <small>Hasta Bilgilendirme</small>
-        </span>
-      </a>
       <nav class="top-nav" aria-label="Ana menu">
         <a href="#islemler">İşlemler</a>
+        <a href="#qr-kodlar">QR</a>
         <a href="#sss">SSS</a>
         <a href="#kvkk">KVKK</a>
       </nav>
+      <a class="brand" href="/" aria-label="Ana sayfa">
+        <img class="brand-logo" src="/icons/med-eis-logo.png" alt="med.eis" />
+      </a>
+      <div class="language-switcher" aria-label="Dil seçimi">
+        <button type="button" aria-label="Türkçe">🇹🇷</button>
+        <button type="button" aria-label="English">🇬🇧</button>
+        <button type="button" aria-label="Русский">🇷🇺</button>
+      </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero-content">
-          <p class="eyebrow">QR ile hızlı erişim</p>
-          <h1>İşlem sonrası merak ettiklerinizi sade ve güvenilir şekilde okuyun.</h1>
+          <h1>
+            İşlem Sonrası Rehber
+          </h1>
           <p>
             Bu sayfa; botoks, dolgu, lazer epilasyon ve kimyasal peeling gibi estetik
             işlemlerden sonra hastalara verilen genel bilgilendirme notlarını içerir.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#islemler">İşlem seç</a>
-            <a class="button secondary" href="tel:+905000000000">Kliniği ara</a>
           </div>
         </div>
       </section>
@@ -54,9 +62,17 @@
       <section id="islemler" class="section">
         <div class="section-heading">
           <p class="eyebrow">İşlem rehberleri</p>
-          <h2>Size verilen QR karttaki işleme dokunun.</h2>
+          <h2>Önce işlem grubunu, ardından rehberi seçin.</h2>
         </div>
         <div id="procedure-list" class="procedure-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="qr-kodlar" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">QR</p>
+          <h2>İşlem gruplarına ait QR kodları</h2>
+        </div>
+        <div id="qr-list" class="procedure-grid" aria-live="polite"></div>
       </section>
 
       <section id="detay" class="section detail-section" hidden>
@@ -96,15 +112,11 @@
       </section>
     </main>
 
-    <a class="contact-fab" href="https://wa.me/905000000000" aria-label="WhatsApp ile iletişim">
-      WhatsApp
-    </a>
-
     <footer class="site-footer">
-      <p>Medest Hasta Bilgilendirme</p>
+      <p>med.eis Hasta Bilgilendirme</p>
       <p>Acil durumda en yakın sağlık kuruluşuna başvurunuz.</p>
     </footer>
 
-    <script src="/app.js?v=2" type="module"></script>
+    <script src="/app.js?v=10" type="module"></script>
   </body>
 </html>

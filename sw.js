@@ -1,5 +1,21 @@
-const CACHE_NAME = "medest-v2";
-const ASSETS = ["/", "/index.html", "/styles.css", "/app.js?v=2", "/manifest.webmanifest"];
+const CACHE_NAME = "medest-v10";
+const ASSETS = [
+  "/",
+  "/index.html",
+  "/styles.css?v=10",
+  "/app.js?v=10",
+  "/manifest.webmanifest",
+  "/icons/med-eis-logo.png",
+  "/icons/med-eis-icon-192.png",
+  "/icons/med-eis-icon-512.png",
+  "/qr-codes/botoks-sonrasi.png",
+  "/qr-codes/dolgu-sonrasi.png",
+  "/qr-codes/cilt-enjeksiyonlari-sonrasi.png",
+  "/qr-codes/cilt-yenileme-sonrasi.png",
+  "/qr-codes/peeling-cilt-bakimi-sonrasi.png",
+  "/qr-codes/lazer-islemi-sonrasi.png",
+  "/qr-codes/vucut-sekillendirme-sonrasi.png",
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS)));
