@@ -1,6 +1,6 @@
 const botoxSections = [
   {
-    title: "İşlem Sonrası Mini Özet",
+    title: "Mini Özet",
     defaultOpen: true,
     items: [
       "İlk gün işlem bölgesini elleme, ovalama, masaj yapma.",
@@ -12,7 +12,7 @@ const botoxSections = [
     ],
   },
   {
-    title: "Ne Zaman Acil Yardım Almalıyım?",
+    title: "Acil Durumlar",
     defaultOpen: true,
     danger: true,
     intro: "Aşağıdaki durumlar nadirdir; ancak olursa acil tıbbi değerlendirme gerekir:",
@@ -27,7 +27,7 @@ const botoxSections = [
     ],
   },
   {
-    title: "İlk 24 Saat Ne Yapmamalıyım?",
+    title: "İlk 24 Saat Yapma",
     items: [
       "İşlem bölgesine dokunma, ovalama, masaj yapma.",
       "İşlem bölgesine baskı uygulama.",
@@ -41,7 +41,7 @@ const botoxSections = [
     ],
   },
   {
-    title: "İlk 24 Saat Ne Yapabilirim?",
+    title: "İlk 24 Saat Yapabilirsin",
     items: [
       "Günlük hafif aktivitelerine devam edebilirsin.",
       "Yüzünü nazikçe yıkayabilirsin.",
@@ -75,7 +75,7 @@ const botoxSections = [
     ],
   },
   {
-    title: "Ne Zaman Kliniği Aramalıyım?",
+    title: "Kliniği Ne Zaman Aramalısın?",
     items: [
       "Şikayetlerin beklenenden uzun sürerse.",
       "Ağrı, kızarıklık veya şişlik giderek artarsa.",
@@ -86,7 +86,7 @@ const botoxSections = [
     ],
   },
   {
-    title: "Etki / İyileşme Zaman Çizelgesi",
+    title: "Etki / İyileşme Zamanı",
     timeline: [
       ["İlk saatler", "Hafif kızarıklık, küçük kabarıklık veya hassasiyet olabilir."],
       ["İlk 24 saat", "Bölgeyi ovalamamak, spor ve sıcak ortamlardan kaçınmak önemlidir."],
@@ -96,7 +96,7 @@ const botoxSections = [
     ],
   },
   {
-    title: "Sık Sorulan Sorular",
+    title: "Sık Sorulanlar",
     faqs: [
       ["Botoks hemen etki eder mi?", "Hayır. Etki genellikle birkaç gün içinde başlar. Tam sonuç için 10-14 gün beklenir."],
       ["Botoks sonrası spor yapabilir miyim?", "İlk 24 saat ağır spor önerilmez."],
@@ -117,7 +117,7 @@ const botoxSections = [
 
 const lipFillerSections = [
   {
-    title: "İşlem Sonrası Mini Özet",
+    title: "Mini Özet",
     defaultOpen: true,
     items: [
       "İlk gün dudağı sıkma, bastırma, ovalama veya masaj yapma.",
@@ -129,7 +129,7 @@ const lipFillerSections = [
     ],
   },
   {
-    title: "Ne Zaman Acil Yardım Almalıyım?",
+    title: "Acil Durumlar",
     defaultOpen: true,
     danger: true,
     intro: "Aşağıdaki durumlar nadirdir; ancak olursa acil tıbbi değerlendirme gerekir:",
@@ -146,7 +146,7 @@ const lipFillerSections = [
     ],
   },
   {
-    title: "İlk 24 Saat Ne Yapmamalıyım?",
+    title: "İlk 24 Saat Yapma",
     items: [
       "Dudağı sıkma, bastırma, ovalama veya masaj yapma.",
       "Dudaklara baskı uygulama.",
@@ -162,7 +162,7 @@ const lipFillerSections = [
     ],
   },
   {
-    title: "İlk 24 Saat Ne Yapabilirim?",
+    title: "İlk 24 Saat Yapabilirsin",
     items: [
       "Günlük hafif aktivitelerine devam edebilirsin.",
       "Bol su içebilirsin.",
@@ -201,7 +201,7 @@ const lipFillerSections = [
     ],
   },
   {
-    title: "Ne Zaman Kliniği Aramalıyım?",
+    title: "Kliniği Ne Zaman Aramalısın?",
     items: [
       "Ağrı, şişlik veya morluk beklenenden fazla olursa.",
       "Dudakta belirgin renk değişikliği fark edersen.",
@@ -213,7 +213,7 @@ const lipFillerSections = [
     ],
   },
   {
-    title: "Etki / İyileşme Zaman Çizelgesi",
+    title: "Etki / İyileşme Zamanı",
     timeline: [
       ["İlk saatler", "Şişlik, kızarıklık, hassasiyet ve dolgunluk hissi olabilir."],
       ["İlk 24 saat", "Şişlik belirgin olabilir. Dudağı sıkmamak ve baskıdan kaçınmak önemlidir."],
@@ -224,7 +224,7 @@ const lipFillerSections = [
     ],
   },
   {
-    title: "Sık Sorulan Sorular",
+    title: "Sık Sorulanlar",
     faqs: [
       ["Dudak dolgusu sonrası şişlik normal mi?", "Evet. İlk günlerde şişlik sık görülür. Genellikle birkaç gün içinde azalır."],
       ["Dudak dolgusu sonrası morluk olur mu?", "Evet. Küçük morluklar olabilir. Genellikle kısa sürede geriler."],
@@ -423,36 +423,43 @@ const guideCategories = [
   {
     slug: "botoks-sonrasi",
     title: "Botoks Sonrası",
+    description: "Yüz, masseter ve terleme botoksu sonrası dikkat edilecekler.",
     guideSlugs: ["yuz-botoksu", "masseter-botoksu", "terleme-botoksu"],
   },
   {
     slug: "dolgu-sonrasi",
     title: "Dolgu Sonrası",
+    description: "Dudak, jawline, nazolabial ve göz altı dolgusu sonrası bakım.",
     guideSlugs: ["dudak-dolgusu", "jawline-dolgusu", "nazolabial-dolgu", "goz-alti-isik-dolgusu"],
   },
   {
     slug: "cilt-enjeksiyonlari-sonrasi",
     title: "Cilt Enjeksiyonları Sonrası",
+    description: "Gençlik aşısı, mezoterapi ve PRP sonrası öneriler.",
     guideSlugs: ["genclik-asisi", "mezoterapi", "prp", "sac-prp"],
   },
   {
     slug: "cilt-yenileme-sonrasi",
     title: "Cilt Yenileme Sonrası",
+    description: "Dermapen, altın iğne ve fraksiyonel lazer sonrası süreç.",
     guideSlugs: ["dermapen", "altin-igne", "fraksiyonel-lazer"],
   },
   {
     slug: "peeling-cilt-bakimi-sonrasi",
     title: "Peeling ve Cilt Bakımı Sonrası",
+    description: "Kimyasal peeling, hydrafacial ve karbon peeling sonrası bakım.",
     guideSlugs: ["kimyasal-peeling", "karbon-peeling", "hydrafacial"],
   },
   {
     slug: "lazer-islemi-sonrasi",
     title: "Lazer İşlemi Sonrası",
+    description: "Lazer epilasyon sonrası cilt konforu ve güneşten korunma.",
     guideSlugs: ["lazer-epilasyon"],
   },
   {
     slug: "vucut-sekillendirme-sonrasi",
     title: "Vücut Şekillendirme İşlemi Sonrası",
+    description: "Soğuk lipoliz ve G5 masajı sonrası takip önerileri.",
     guideSlugs: ["soguk-lipoliz", "g5-masaji"],
   },
 ];
@@ -480,6 +487,7 @@ const detailSection = document.querySelector("#detay");
 const procedureDetail = document.querySelector("#procedure-detail");
 const faqList = document.querySelector("#faq-list");
 const qrList = document.querySelector("#qr-list");
+const brandLink = document.querySelector(".brand");
 
 function findGuide(slug) {
   return guides.find((guide) => guide.slug === slug || guide.aliases?.includes(slug));
@@ -501,6 +509,7 @@ function renderProcedureCards() {
           <summary>
             <span class="card-number">${String(index + 1).padStart(2, "0")}</span>
             <h3>${category.title}</h3>
+            <p>${category.description}</p>
             <span class="category-toggle-icon" aria-hidden="true"></span>
           </summary>
           <div class="guide-chip-list">
@@ -525,6 +534,7 @@ function renderQrCards() {
           <summary>
             <span class="card-number">${String(index + 1).padStart(2, "0")}</span>
             <h3>${category.title}</h3>
+            <p>${category.description}</p>
             <span class="category-toggle-icon" aria-hidden="true"></span>
           </summary>
           <div class="qr-image-panel">
@@ -535,6 +545,29 @@ function renderQrCards() {
       `,
     )
     .join("");
+}
+
+function renderMiniSummary(guide) {
+  const summarySection = guide.sections.find((section) => section.defaultOpen && section.items?.length);
+  if (!summarySection) return "";
+
+  const labels = ["İlk Saatler", "Bugün", "Normal", "Etki", "Sonuç", "Dikkat"];
+  const items = summarySection.items.slice(0, 6);
+
+  return `
+    <div class="mini-summary" aria-label="Mini özet">
+      ${items
+        .map(
+          (item, index) => `
+            <article class="mini-summary-card">
+              <span>${labels[index] || "Özet"}</span>
+              <p>${item}</p>
+            </article>
+          `,
+        )
+        .join("")}
+    </div>
+  `;
 }
 
 function renderSectionContent(section) {
@@ -568,6 +601,7 @@ function renderDetail(slug) {
       <h2>${guide.title}</h2>
       <p>${guide.intro}</p>
     </div>
+    ${renderMiniSummary(guide)}
     <div class="accordion-list">
       ${guide.sections
         .map(
@@ -626,6 +660,20 @@ renderFaqs();
 handleHash();
 
 window.addEventListener("hashchange", handleHash);
+
+brandLink?.addEventListener("click", (event) => {
+  event.preventDefault();
+  window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#top`);
+  const root = document.documentElement;
+  const previousScrollBehavior = root.style.scrollBehavior;
+  root.style.scrollBehavior = "auto";
+  window.scrollTo(0, 0);
+  root.scrollTop = 0;
+  document.body.scrollTop = 0;
+  window.requestAnimationFrame(() => {
+    root.style.scrollBehavior = previousScrollBehavior;
+  });
+});
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {

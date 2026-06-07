@@ -1,13 +1,13 @@
-const CACHE_NAME = "medest-v12";
+const CACHE_NAME = "medest-v17";
 const ASSETS = [
   "/",
   "/index.html",
-  "/styles.css?v=12",
-  "/app.js?v=12",
+  "/styles.css?v=17",
+  "/app.js?v=17",
   "/manifest.webmanifest",
-  "/icons/med-eis-logo.png",
-  "/icons/med-eis-icon-192.png",
-  "/icons/med-eis-icon-512.png",
+  "/icons/med-eis-logo-final.png",
+  "/icons/med-eis-icon-final-192.png",
+  "/icons/med-eis-icon-final-512.png",
   "/qr-codes/botoks-sonrasi.png",
   "/qr-codes/dolgu-sonrasi.png",
   "/qr-codes/cilt-enjeksiyonlari-sonrasi.png",
